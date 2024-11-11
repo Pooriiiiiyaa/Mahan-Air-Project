@@ -1,0 +1,414 @@
+body {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(229, 229, 229);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header {
+    background: url('/img/mahan-aircraft-in-sky.jpg');
+    height: 450px;
+    background-size: cover;
+}
+nav {
+    width: 1200px;
+    margin: auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px 10px;
+    height: 80px;
+
+    position: sticky;
+    top: 0;
+}
+.header-left ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+.header-left ul li a {
+    color: white;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.header-right img {
+    mix-blend-mode:color-burn;
+}
+.header-right span {
+    border-left: 2px solid white;
+    display: block;
+    height: 40px;
+}
+.header-right button {
+    width: 110px;
+    height: 36px;
+    background-color: transparent;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 2px solid white;
+    border-radius: 6px;
+    padding: 2px;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+.header-right button:hover {
+    background-color: white;
+    color: #303030;
+    cursor: pointer;
+}
+.Travel-explore {
+    width: 1200px;
+    margin: auto;
+    transform: translateY(220px);
+}
+.Travel-explore h2 {
+    font-size: 1rem;
+    font-family: Roboto, Verdana, Geneva, sans-serif;
+    color: #ffffff;
+    text-shadow: .1rem .1rem .6rem rgba(0, 0, 0, .4);
+}
+.Travel-explore button {
+    margin-top: 20px;
+    width: 120px;
+    height: 36px;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 6px;
+    padding: 2px;
+    font-weight: 500;
+    color: white;
+    transition: all 0.2 ease;
+}
+.Travel-explore button:hover {
+    background-color: rgba(240, 247, 252, 0.244);
+    cursor: pointer;
+}
+/* -------------section -------------------------------- */
+
+section {
+    width: 1200px;
+    margin: auto;
+    background-color: white;
+    height: auto;
+    border-radius: 6px;
+    box-shadow: 3px 3px 15px rgba(164, 164, 164, 0.473);
+
+    transform: translateY(-50px);
+}
+.myButtons {
+    width: 100%;
+    display: flex;
+}
+.myButtons button {
+    width: 33.4%;
+    border: none;
+    height: 51px;
+    background-color: rgb(0, 166, 147);
+    color: white;
+    font-family: Roboto, Verdana, Geneva, sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.radio-inputs {
+    padding: 20px 40px 10px;
+    margin-top: 15px;
+    display: flex;
+    gap: 20px;
+}
+.radio-inputs div {
+    display: flex;
+    gap: 5px;
+}
+.radio-inputs div input {
+    width: 20px;
+    accent-color: rgb(0 , 166 , 147);
+}
+.myInputs {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    padding: 20px 40px;
+    margin-top: 15px;
+}
+.toggle-inp {
+    display: flex;
+    width: 40%;
+}
+.toggle-inp input {
+    border: 1px solid rgb(220, 220, 220);
+    width: 100%;
+    height: 40px;
+    padding:0 5px;
+    outline: none;
+}
+.date-inp {
+    width: 30%;
+}
+.date-inp input {
+    width: 100%;
+    border: 1px solid rgb(220, 220, 220);
+    height: 40px;
+    padding: 0 5px;
+    outline: none;
+    border-radius: 6px;
+}
+.btn-inp {
+    width: 30%;
+    display: flex;
+    gap: 10px;
+}
+.btn-inp button{
+    width: 50%;
+    background-color: #ff6636;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    border: 1px solid #ff6636;
+    border-radius: 6px;
+}
+.btn-inp button:hover {
+    background-color: #ff6536d4;
+    cursor: pointer;
+}
+.btn-inp input {
+    width: 50%;
+    outline: none;
+    border: 1px solid rgb(220, 220, 220);
+    border-radius: 6px;
+    padding: 0 5px;
+}
+.sec-box {
+    width: 1200px;
+    margin:40px auto;
+    background-color: #00a693;
+    height: 60px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+}
+.sec-box button{
+    width: 160px;
+    height: 36px;
+    border: none;
+    border-radius: 6px;
+    background-color: white;
+    color: #303030;
+    font-weight: 700;
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+}
+.sec-box h2 {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+}
+.carts {
+    width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 80px;
+}
+.cart {
+    width: 25%;
+    height: 180px;
+    text-align: center;
+    transition: all 0.8s ease;
+}
+.cart:hover {
+    transform: translateY(-10px);
+    cursor: pointer;
+}
+.cart img {
+    width: 50%;
+    height: 70%;
+    padding: 10px;
+    border-radius: 25px;
+    box-shadow: 3px 3px 10px rgb(209, 209, 209);
+    background-color: white;
+}
+.cart p {
+    margin-top: 30px;
+    font-weight: 600;
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.about-flight {
+    width: 1200px;
+    margin: 100px auto 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.location {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.location select {
+    width: 100px;
+    height: 45px;
+    padding: 5px;
+    border-radius: 6px;
+}
+.location p {
+    color: gray;
+}
+.with-textdeco{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-decoration: underline;
+    text-underline-offset: 15px;
+    text-decoration-color: #00a693;
+}
+.without-textdeco {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.imgs {
+    width: 1200px;
+    height: 465px;
+    margin:20px auto;
+    display: flex;
+    gap: 20px;
+}
+.img-istanbul {
+    width: 50%;
+    background-color: white;
+    border-radius: 10px;
+}
+.img-istanbul img {
+    border-top-left-radius: 10px;
+    border-top-right-radius:10px ;
+}
+.about-iran-img{
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.cart-img {
+    width: 285px;
+    height: 228px;
+    background-color: white;
+    border-radius: 10px;
+}
+.cart-img img{
+    width: 100%;
+    height: 60%;
+    border-top-left-radius: 10px;
+    border-top-right-radius:10px ;
+}
+.cart-img h3 {
+    margin-top: 15px;
+    padding-left:20px ;
+    font-size: 1.1rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.cart-img p {
+    margin-top: 20px;
+    padding-left: 20px;
+    color: gray;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8rem;
+}
+.text-img-istanbul {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 80px;
+    padding: 20px;
+}
+.about-date {
+    text-align: center;
+}
+.time-travel {
+    width: 50%;
+}
+.time-travel h2 {
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.time-travel p {
+    font-size: 0.8rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: gray;
+    margin-top: 10px;
+}
+.all-days {
+    width: 50%;
+    display: flex;
+    gap: 13px;
+}
+.days button {
+    width: 22px;
+    height: 22px;
+    border-radius: 50% ;
+    background-color: #00a693;
+    color: white;
+    border:none;
+    margin-top: 10px;
+    /* line-height:10px; */
+}
+.days button:hover{
+    cursor: pointer;
+    background-color: #00a69390;
+}
+.days p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 0.8rem;
+}
+
+footer {
+    margin-top: 80px;
+    height: 330px;
+    background-color: #303030;
+}
+.all-footer {
+    width: 1200px;
+    margin: auto;
+    height: 80%;
+    padding: 30px 0;
+}
+table {
+    text-align: left;
+    width: 70%;
+    color: white;
+    height: 210px;
+}
+table th {
+    color: gray;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8rem;
+}
+table td {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8rem;
+}
+table td:hover {
+    color: #00a693;
+    cursor: pointer;
+}
